@@ -1,0 +1,62 @@
+{
+    "Users":[
+        {
+            "id": 1,
+            "firstname": "Shubham",
+            "lastname": "Sharma",
+            "mobile": 3738320303,
+            "email": "shubham@gmail.com",
+            "password": "1"
+        }
+    ],
+
+    "Playlists":[
+        {
+            "id": "2",
+            "name": "Playlist1",
+            "songsId": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Playlist12",
+            "songsId": [
+                "2",
+                "4"
+            ]
+        }
+    ],
+
+    "Songs":[
+        {
+            "id": "1",
+            "movie": "KGF Chapter1",
+            "title": "Kokh ke rath mein",
+            "length": "4:15",
+            "singer": "Vijay Prakash"
+        },
+        {
+            "id": "2",
+            "movie": "BORDER",
+            "title": "Sandese aate hain",
+            "length": "7:12",
+            "singer": "Roop Kumar Rathid and Sonu Kumar"
+        },
+        {
+            "id": "3",
+            "movie": "KGF Chapter1",
+            "title": "Salam Rocky Bhai",
+            "length": "4:15",
+            "singer": "Vijay Prakash"
+        },
+        {
+            "id": "4",
+            "movie": "URI",
+            "title": "Behe chala",
+            "length": "5:25",
+            "singer": "Yasser Desai"
+        }
+    ]
+}

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 
-import { Card, Badge, Button, Badge } from "react-bootstrap";
+import { Card, Button, Table } from "react-bootstrap";
 
 function SongDetail(props){
     const User = useSelector((state)=>state.userReducer)
@@ -62,8 +62,8 @@ function SongDetail(props){
     useEffect(()=>{
         if(songDisplay===true){
             setMovie("Movie: " + props.movie)
-            setMovie("Length: " + props.length)
-            setMovie("Singer: " + props.singer)
+            setLength("Length: " + props.length)
+            setSinger("Singer: " + props.singer)
         }
         else{
             setMovie([])
@@ -120,7 +120,7 @@ function SongDetail(props){
                 <Card.Title>
                     {props.title}<br/><br/>
                     <Button variant="danger" style={{width: "120px"}} onClick={handleRemove}>Remove</Button>
-                    <Button variant="secondary" style={{width: "120px"}} onClick={handleDelete}>details</Button>
+                    <Button variant="secondary" style={{width: "120px"}} onClick={handleDetail}>details</Button>
                 </Card.Title>
                 <Card.Text>
                     <Table striped bordered hover>
@@ -136,3 +136,5 @@ function SongDetail(props){
 
     }
 }
+
+export default SongDetail;

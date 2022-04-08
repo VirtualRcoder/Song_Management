@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import { createStore } from "redux";
 import { Provider } from 'react-redux';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import songReducer from './redux_store'
 const store = createStore(songReducer);
 

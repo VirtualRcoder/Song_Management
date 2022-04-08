@@ -24,7 +24,7 @@ const keyReducer = (state=keyInitializer, action)=>{
 const userReducer=(state=userInitializer, action)=>{
     switch(action.type){
         case "PROFILE":
-            state = [...state. action.payload]
+            state = [...state, action.payload]
             return state
         
         case "LOGOUT":
@@ -73,8 +73,8 @@ const songReducer = (state=songInitializer, action)=>{
 const playlistReducer = (state=playlistInitializer, action)=>{
     switch(action.type){
         case "PLAYLIST":
-            action.payload.map((song)=>{
-                state = [...state, action.payload]
+            action.payload.map((playlist)=>{
+                state = [...state, playlist]
             })
             return state
         

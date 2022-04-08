@@ -7,17 +7,15 @@ import SongDetail from './SongDetail';
 
 function Song(props){
     if(props.location.state){
-        if(props.location.state[0]=='playlist'){
+        if(props.location.state[0]==='playlist'){
             props.history.push(props.location.state[0])
         }
     }
 
     const Songs = useSelector((state)=>state.songReducer)
     const User = useSelector((state)=>state.userReducer)
-    const dispatch = useDispatch()
 
     const [songs, setSongs] = useState([])
-    const Song = useRef()
 
     function addSong(){
         if(User[0]){
